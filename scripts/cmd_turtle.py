@@ -17,22 +17,16 @@ class WhereToGo():
         twist_msg = Twist()
 
         if _string_msg.data == "go":
-            twist_msg.linear.x = 3.0
+            twist_msg.linear.x = 2.0
             twist_msg.angular.z = 0.0
         
         elif _string_msg.data == "left":
-            twist_msg.linear.x = 0.0
-            twist_msg.linear.y = 1.0
-            twist_msg.angular.z = 0.0
+            twist_msg.linear.x = 2.0
+            twist_msg.angular.z = 1.5
             
         elif _string_msg.data == "right":
-            twist_msg.linear.x = 0.0
-            twist_msg.linear.y =  - 1.0
-            twist_msg.angular.z = 0.0
-        elif _string_msg.data == "turn":
-            twist_msg.linear.x = 0.0
-            twist_msg.linear.y =  0.0
-            twist_msg.angular.z = 1.5
+            twist_msg.linear.x = 2.0
+            twist_msg.angular.z = -1.5
         
         else:
             rospy.logwarn("input String should be 'go', 'left', 'right', try again")
