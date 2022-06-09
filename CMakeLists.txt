@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(hope_code)
 ## CMakeList 11:22
+## Third Commit Message
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
